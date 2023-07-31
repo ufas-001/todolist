@@ -22,6 +22,6 @@ jobs:
       - name: Build artifact
         run: npm run build
       - name: Deploy to Netlify
-        run: npx netlify-cli deploy --prod
+        run: npx npx netlify-cli deploy --prod --dir=build
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
