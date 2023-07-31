@@ -1,0 +1,66 @@
+.App {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .todo-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .todo-input input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  .todo-input button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #61dafb;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  .todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .todo-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .todo-list .button-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .todo-list button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
