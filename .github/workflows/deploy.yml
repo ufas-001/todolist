@@ -40,10 +40,10 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         id: get-deploy-url
-        
+
       - name: Send Deployment Notification Email
         run: |
-          DEPLOYED_URL="${{ steps.deploy-output.outputs.deployed_url }}"
+          DEPLOYED_URL="${{ steps.build_and_deploy.outputs.deployed_url }}"
           # You can now use the $DEPLOYED_URL variable in your email content or send it wherever you need.
           echo "Your deployed app URL: ${DEPLOYED_URL}"
           # Add code here to send the email, for example using the `send_email.sh` script or another email service.
